@@ -1,0 +1,7 @@
+/vendor
+/.idea
+composer.phar
+.DS_Store
+Thumbs.db
+
+.phpstorm.meta.php

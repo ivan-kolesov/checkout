@@ -1,0 +1,46 @@
+{
+  "name": "Presetting",
+  "description": "Presetting",
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "php": ">=7.1.8",
+    "laravel/framework": "5.6.*"
+  },
+  "require-dev": {
+  },
+  "repositories": [
+  ],
+  "autoload": {
+    "classmap": [
+    ],
+    "files": [
+    ],
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+    ]
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "Illuminate\\Foundation\\ComposerScripts::postInstall"
+    ],
+    "post-update-cmd": [
+      "Illuminate\\Foundation\\ComposerScripts::postUpdate"
+    ],
+    "post-root-package-install": [
+      "php -r \"copy('.env.example', '.env');\""
+    ],
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump"
+    ]
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
